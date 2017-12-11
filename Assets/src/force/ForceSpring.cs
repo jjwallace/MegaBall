@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class ForceSpring : MonoBehaviour
-{
-
+public class ForceSpring : MonoBehaviour{
+  
   private Animator anim;
   public float bounceStrength = 10f;
   
@@ -19,11 +18,10 @@ public class ForceSpring : MonoBehaviour
     anim = GetComponent<Animator>();
   }
   
-  void OnTriggerEnter2D (Collider2D col)
-  {
+  void OnTriggerEnter2D (Collider2D col){
     
-    if(col.gameObject.tag == "Ball")
-    {
+    if(col.gameObject.tag == "Ball"){
+      
       //Play Animation
       anim.Play("bounceAnimation");
       
@@ -40,7 +38,6 @@ public class ForceSpring : MonoBehaviour
       bounceCount ++;
       Debug.Log("Spring Bounce on spring: " + transform.name + 
                 " - Bounces: " + bounceCount);
-
     }
   }
 }

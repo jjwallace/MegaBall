@@ -85,12 +85,12 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-Assets/src/AudioScript.cs
-Assets/src/force/ForceSpring.cs
-Assets/src/fx/FXHeartBeat.cs
-Assets/src/fx/FXSpin.cs
-Assets/src/ui/DragComponent.cs
-Assets/src/ui/DragRotate.cs
+Assets/Src/AudioScript.cs
+Assets/Src/Force/ForceSpring.cs
+Assets/Src/Fx/FXHeartBeat.cs
+Assets/Src/Fx/FXSpin.cs
+Assets/Src/Ui/DragComponent.cs
+Assets/Src/Ui/DragRotate.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
