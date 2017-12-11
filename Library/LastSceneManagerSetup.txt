@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MegaBall.unity
+- path: MegaBall.unity
   isLoaded: 1
   isActive: 1

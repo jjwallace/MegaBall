@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioScript : MonoBehaviour {
-
-  public AudioClip audioClip;
-  public AudioSource audioSource;
   
-	// sound initialization
+  [Header("*Required Audio Source with AudioClip Attached!")]
+  public AudioSource audio;
+  
+	//sound initialization
 	void Start () {
-		audioSource.clip = audioClip;
+		audio = GetComponent<AudioSource>();
 	}
 
-  void OnTriggerEnter2D (Collider2D col)
-  {
-    if(col.gameObject.name == "ball_green")
-    {
-      audioSource.Play();
-    }
+  //play when gameObject with 'Ball' tag collides
+  void OnTriggerEnter2D (Collider2D col){
+    audio.Play();
   }
 }
