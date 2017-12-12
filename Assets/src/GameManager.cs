@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
   
   public static GameManager instance = null;
   
-  //create game manager if it does exist
+  //Create game manager if it does not exist
   void Awake(){
     if(instance == null){
       instance = this; 
