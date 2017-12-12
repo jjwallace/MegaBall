@@ -1,6 +1,6 @@
-#MegaBall#
+#MegaBall
 
-###A Unity2D physics sandbox puzzle game.###
+###A Unity2D physics sandbox puzzle game.
 
 Unity Editor Entry Point:
 /Assets/MegaBall.Unity (file)
