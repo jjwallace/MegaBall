@@ -9,7 +9,7 @@ public class ForceSpring : MonoBehaviour{
   //Promt game designer to use 'Ball' tag
   [Header("Automatically set to tag 'Ball'")]
   [Tooltip("This spring force will be applied to any item containing the tag 'Ball' and does not need a rigid body assign to this field.")]
-  public Rigidbody2D rb;
+  public Rigidbody2D rigidBody;
   
   private int bounceCount;
   
@@ -26,13 +26,13 @@ public class ForceSpring : MonoBehaviour{
       anim.Play("bounceAnimation");
       
       //reference rigid body of collision object (ball)
-      rb = col.gameObject.GetComponent<Rigidbody2D>();
+      rigidBody = col.gameObject.GetComponent<Rigidbody2D>();
    
       //zero out collision object (ball) velocity
-      rb.velocity = Vector3.zero;
+      rigidBody.velocity = Vector3.zero;
       
       //add force to collision object (ball)
-      rb.AddForce(transform.up * bounceStrength * -50);
+      rigidBody.AddForce(transform.up * bounceStrength * -50);
       
       //log Collision
       bounceCount ++;

@@ -6,7 +6,7 @@ public class Loader : MonoBehaviour {
 
 	public GameObject gameManager;
 	
-	void Awake () {
+	void Awake() {
 		if(GameManager.instance == null){
       //launch game manager if not active
       Instantiate(gameManager);

@@ -8,7 +8,7 @@ public class AudioScript : MonoBehaviour {
   public AudioSource audio;
   
 	//sound initialization
-	void Start () {
+	void Start() {
 		audio = GetComponent<AudioSource>();
 	}
 
